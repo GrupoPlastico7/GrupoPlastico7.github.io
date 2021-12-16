@@ -23,7 +23,7 @@ scene = new THREE.Scene();
 // mouse = new THREE.Vector2();
 
 ///////CREACION DE UNA CAMARA///////////////////
-camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
+camera = new THREE.PerspectiveCamera(70, 100 / 10000, 1, 10000);
 //agrego la camara a mi escena 
 scene.add(camera);
 
