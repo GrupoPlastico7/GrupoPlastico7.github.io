@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <head>
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style>
+		#total {
+			overflow: hidden; 
+			font-family: Monospace;
+			text-align: center;
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+	</style>
 	<title>Augmented reality Part 2 _ MID 2021</title>
 	<!-- include three.js library -->
 	<script src="libraries/js/three.js"></script>
@@ -18,12 +27,29 @@
 
 </head>
 
-<body style='margin : 35px; overflow: hidden; font-family: Monospace;'>
+<body>
+<div id="total">
 
 
-<script src= "ar_app.js"></script>
+
+  <table style="width: 100%;">
+    <tr style="background-color: white;">
+     <td style="width: 70%; padding:1.5vh;">
+        <h1 style="font-size: 3.5vh;">Examen Tecnología 3D Avanzada</h1>
+      <p style="font-size: 1.5vh;">Grupo Plástico 7
+     </td>
+    </tr>
+    <tr>
+      <td><p style="background-color: white; font-size: 2vh;">Broquedis - Lebedina - Murúa - Schofield</td>
+    </tr>
+  </table>
+
+
+	<script src= "ar_app.js">
+	</script>
+
+</div>
 
 </body>
-<h1>Examen Tecnología 3d Avanzada</h1>
-<p>Grupo Plástico 7
+
 </html>

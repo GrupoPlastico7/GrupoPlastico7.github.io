@@ -23,7 +23,7 @@ scene = new THREE.Scene();
 // mouse = new THREE.Vector2();
 
 ///////CREACION DE UNA CAMARA///////////////////
-camera = new THREE.PerspectiveCamera(70, 100 / 10000, 1, 10000);
+camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
 //agrego la camara a mi escena 
 scene.add(camera);
 
@@ -477,7 +477,7 @@ document.addEventListener('mousemove', onDocumentMouseMove, false);// detecta mo
                     RhinoMesh.scale.set(.01,.01,.01);
                     RhinoMesh.castShadow = false;
                     RhinoMesh.receiveShadow = false;
-                    RhinoMesh.rotation.set(0,0,0);
+                    RhinoMesh.rotation.set(90,0,0);
                     RhinoMesh.position.set(0,0,0);
 
                     markerRoot5.add(RhinoMesh);
@@ -622,6 +622,7 @@ function animate() {
     requestAnimationFrame(animate);
     deltaTime = clock.getDelta();
     totalTime += deltaTime; // totalTime =  totalTime + deltaTime 
+    
     update();
     render();
 }
