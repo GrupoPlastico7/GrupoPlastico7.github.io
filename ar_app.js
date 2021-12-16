@@ -466,18 +466,18 @@ document.addEventListener('mousemove', onDocumentMouseMove, false);// detecta mo
 
     new THREE.MTLLoader()
         .setPath('models/botellas/')
-        .load('botellas_r2.mtl', function (materials) {
+        .load('botellas.mtl', function (materials) {
             materials.preload();
             new THREE.OBJLoader()
                 .setMaterials(materials)
                 .setPath('models/botellas/')
-                .load('botellas_r2.obj', function (group) {
+                .load('botellas.obj', function (group) {
                     RhinoMesh = group.children[0];
                     RhinoMesh.material.side = THREE.DoubleSide;
                     RhinoMesh.scale.set(.01,.01,.01);
                     RhinoMesh.castShadow = false;
                     RhinoMesh.receiveShadow = false;
-                    RhinoMesh.rotation.set(90,0,0);
+                    RhinoMesh.rotation.set(0,0,0);
                     RhinoMesh.position.set(0,0,0);
 
                     markerRoot5.add(RhinoMesh);
